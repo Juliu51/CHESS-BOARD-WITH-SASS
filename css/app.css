@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper .lenta_border {
+  width: 50%;
+  height: 80%;
+  border: 3px solid black;
+}
+
+.wrapper .lenta_border .pirma_paskutine_eilute {
+  display: flex;
+  height: calc(100% / 10);
+}
+
+.wrapper .lenta_border .pirma_paskutine_eilute .k_tuscia {
+  float: left;
+  width: calc(100% / 10);
+}
+
+.wrapper .lenta_border .pirma_paskutine_eilute .v_raides {
+  display: flex;
+  width: calc(100% - 20%);
+}
+
+.wrapper .lenta_border .pirma_paskutine_eilute .v_raides .raides {
+  height: 100%;
+  width: calc(100% / 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 950px) and (max-height: 650px) {
+  .wrapper .lenta_border .pirma_paskutine_eilute .v_raides .raides {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 200px) and (max-height: 250px) {
+  .wrapper .lenta_border .pirma_paskutine_eilute .v_raides .raides {
+    font-size: 10px;
+  }
+}
+
+.wrapper .lenta_border .pirma_paskutine_eilute .d_tuscia {
+  width: calc(100% / 10);
+}
+
+.wrapper .lenta_border .eilute {
+  display: flex;
+  height: calc(100% / 10);
+}
+
+.wrapper .lenta_border .eilute .skaicius_k {
+  float: left;
+  width: calc(100% / 10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 70px;
+}
+
+@media (max-width: 950px) and (max-height: 650px) {
+  .wrapper .lenta_border .eilute .skaicius_k {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 200px) and (max-height: 250px) {
+  .wrapper .lenta_border .eilute .skaicius_k {
+    font-size: 10px;
+  }
+}
+
+.wrapper .lenta_border .eilute .v_eilute {
+  display: flex;
+  width: calc(100% - 20%);
+}
+
+.wrapper .lenta_border .eilute .v_eilute .langeliai {
+  height: 100%;
+  width: calc(100% / 8);
+  border: 1px solid black;
+}
+
+.wrapper .lenta_border .eilute .v_eilute .black {
+  background-color: black;
+}
+
+.wrapper .lenta_border .eilute .v_eilute .black:nth-of-type(2n) {
+  background-color: white;
+}
+
+.wrapper .lenta_border .eilute .v_eilute .white:nth-of-type(2n) {
+  background-color: black;
+}
+
+.wrapper .lenta_border .eilute .skaicius_d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 10);
+  font-weight: 500;
+  font-size: 70px;
+}
+
+@media (max-width: 950px) and (max-height: 650px) {
+  .wrapper .lenta_border .eilute .skaicius_d {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 200px) and (max-height: 250px) {
+  .wrapper .lenta_border .eilute .skaicius_d {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,98 @@
+$dh: calc(100% / 10);
+$vrh: calc(100% - 20%);
+$rh: calc(100% / 8);
+
+
+
+.wrapper {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    .lenta_border {   
+        width: 50%;
+        height: 80%;
+        border: 3px solid black;
+        .pirma_paskutine_eilute{
+            display:flex;
+            height: $dh;
+            .k_tuscia {
+                float:left;
+                width: $dh;
+            }
+            .v_raides {
+                display: flex;
+                width: $vrh;
+                .raides {
+                    height: 100%;
+                    width: $rh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    @media (max-width: 950px) and (max-height: 650px){
+                        font-size: 30px;}
+                        @media (max-width: 200px) and (max-height: 250px){
+                            font-size: 10px;}
+                }
+            }
+            .d_tuscia {
+                width: $dh;
+            }
+        }
+        .eilute {
+            display:flex;
+            height: $dh;
+            .skaicius_k {
+                float:left;
+                width: $dh;  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 70px;
+                @media (max-width: 950px) and (max-height: 650px){
+                    font-size: 30px;}
+                    @media (max-width: 200px) and (max-height: 250px){
+                        font-size: 10px;}
+            }
+            .v_eilute {
+                display: flex;
+                width: $vrh;
+                .langeliai{
+                    height: 100%;
+                    width: $rh;
+                    border: 1px solid black;
+                }
+                .black {    
+                    background-color: black;
+                }
+                .black:nth-of-type(2n) {
+                background-color: white;
+                }
+                .white:nth-of-type(2n) {
+                background-color: black;
+                }
+            }
+            .skaicius_d {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: $dh; 
+                font-weight: 500;
+                font-size: 70px;
+                @media (max-width: 950px) and (max-height: 650px){
+                    font-size: 30px;}
+                    @media (max-width: 200px) and (max-height: 250px){
+                        font-size: 10px;}
+            }
+        }
+    }}
+
+
+
+        
+        
